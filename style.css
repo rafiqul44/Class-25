@@ -1,0 +1,136 @@
+.top-section{
+    background-color: #eaeff3 !important;
+}
+
+.pricing{
+    transition: all 0.5s;
+    border: 0;
+}
+.pricing:hover{
+    background-color: rgb(74, 72, 211);
+    color: white;
+}
+.pricing:hover .buy-now{
+    background: #fff ;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+   
+}
+.buy-now{
+    border: none;
+    position: relative;
+   
+    z-index: 1;
+    padding: 10px 40px;
+    font-weight: 600;
+    
+}
+
+.buy-now::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: blue;
+    
+  
+    transition:.5s;
+    
+}
+.buy-now:hover:after{
+    width: 100%;
+    border-radius: 25px;
+    color: rgb(240, 240, 248);
+    background: rgb(41, 22, 219);
+    z-index: -1;
+    
+    
+
+}
+.pricing-bin h1{
+    position: relative;
+}
+
+.pricing-bin h1::after{
+    content: "";
+    width: 50PX;
+    height: 3px;
+    top: 50px;
+    left: 140px;
+    position: absolute;
+    background-color: rgb(95, 40, 206);
+}
+
+
+/* Banner section */
+.banner-section{
+    background-image: url(./img/free-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0 !important;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 255, 0.404);
+    z-index: -1;
+}
+.banner-text{
+    padding: 50px 0;
+}
+.banner-text h5{
+    margin-top: 40px !important;
+}
+.banner-text h1{
+    position: relative;
+}
+.banner-text h1::after{
+    content: "";
+    width: 50PX;
+    height: 3px;
+    top: 100px;
+    left: 630px;
+    position: absolute;
+    background-color: rgb(245, 244, 248);
+}
+.banner-text button{
+    margin-top: 50px;
+    background-color: #fff;
+    color: rgb(59, 24, 214);
+    padding: 10px 40px;
+    font-weight: 600;
+}
+/* .banner-text button:hover{
+    background-color: #fff;
+} */
+
+
+/* Table section */
+.table-section{
+    background-color: #eaeff3;
+}
+.div1 input{
+    border-radius: 25px 25px !important;
+}
+.abc {
+    border-radius: 25px;
+    padding: 7px 46px;
+}
+.card-body{}
+.card-body h5{
+    padding: 10px 0 60px 0;
+    display: inline-block;
+}
+.card-body a{
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
